@@ -3,6 +3,7 @@ const invertedText = document.querySelector('#invertedText');
 console.log(invertedText.value)
 
 let newWord = [];
+let letters = '';
 let letter = ''
 let word = '';
 
@@ -12,7 +13,8 @@ function keyPress() {
         newWord.push(text);
         if(newWord != ''){
             letter = newWord[newWord.length - 1]
-            invertedText.value = word + letter;
+            word.concat(letter,letters)
+            invertedText.value = word.value;
         }
     }   
 }
