@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inverted Text</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <input type="text" name="text" id="text" onkeyup="keyPress()">
-        <textarea name="" id="invertedText" cols="30" rows="10"></textarea>
+        <textarea class="textarea" name="" id="invertedText"></textarea>
+        <div class="textAreaDiv">
+            <input class="inputText" type="text" name="text" id="text" placeholder="Type Anything" onkeyup="keyPress()">
+        </div>
     </main>  
     <script src="./index.js"></script>  
 </body>
