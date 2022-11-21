@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inverted Text</title>
+    <title>Reverse Text Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <header>
+        <div class="headerText">
+            <h1>Reverse Text Generator</h1>
+            <span class="material-symbols-outlined">
+                keyboard
+            </span>
+        </div>
+    </header>
+    <main>        
         <textarea class="textarea" name="" id="invertedText"></textarea>
         <div class="textAreaDiv">
-            <input class="inputText" type="text" name="text" id="text" placeholder="Type Anything" onkeyup="keyPress()">
+            <input class="inputText" type="text" name="text" id="text" placeholder="Type Your Text Here..." onkeyup="keyPress()">
         </div>
     </main>  
     <script src="./index.js"></script>  
